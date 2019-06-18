@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'fonts';
+@import 'config';
 
 *{
   margin:0;
@@ -12,7 +13,9 @@ header{
   background: $white-color;
   height: 10vh;
   border-bottom:1px solid $primary-color;
-
+  overflow-x: hidden;
+  margin-top:1rem;
+  
   & nav{
     display: flex;
 
@@ -37,19 +40,53 @@ header{
 
     & .navbar{
       flex:3;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
       
+      & .hamburger-menu{
+        width:35px;
+        height: 30px;
+        background: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 99;
+        margin-right:5rem;
+
+        & .line{
+          width:100%;
+          height: 4px;
+          background: $primary-color;
+          transition: 0.5s ease-in-out;
+        }
+
+        & .line-1.active{
+          transform: rotateZ(405deg) translate(10px,8px);
+        }
+        & .line-2.active{
+          opacity:0;
+        }
+        & .line-3.active{
+          transform: rotateZ(-405deg) translate(11px,-8px);
+        }
+      }
 
       & .nav-list{
         position: absolute;
-        top:10vh;
-        right: 0;
-        width:30%;
+        top:0;
         bottom:0;
+        right: -50%;
+        width:50%;
         background: $nav-list-color;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: 0.5s ease-in-out;
+        z-index:-9;
+        
         
         & .nav-item{
           margin-top:2rem;
@@ -65,6 +102,11 @@ header{
           }
         }
       }
+      & .show{
+        right: 0;
+      }
     }
   }
 }
+
+@import 'mobile';

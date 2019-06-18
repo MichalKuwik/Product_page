@@ -1,0 +1,16 @@
+@include mediaSm {
+  header{
+    
+    & nav{
+      & .logo-div{
+        flex:1;
+        & p{
+          font-size:1rem;
+        }
+      }
+      & .navbar{
+        flex:1;
+      }
+    }
+  }
+}
