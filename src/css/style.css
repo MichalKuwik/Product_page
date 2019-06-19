@@ -19,6 +19,9 @@ header {
         header nav .logo-div .fas.iconAnime {
           transform: rotate(360deg);
           transition: 0.4s linear; }
+        header nav .logo-div .fas.reverse {
+          transform: rotate(0deg);
+          transition: 0.4s linear; }
       header nav .logo-div p {
         color: black;
         text-transform: uppercase;
@@ -93,6 +96,25 @@ header {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.sec1 {
+  display: flex;
+  align-items: center;
+  min-height: 80vh; }
+  .sec1 .cover-img {
+    height: 35vh;
+    flex: 1; }
+    .sec1 .cover-img img {
+      width: 80%;
+      height: 100%; }
+  .sec1 .introduction {
+    flex: 1; }
+    .sec1 .introduction .intro-text h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      background: linear-gradient(to right, rgba(255, 0, 0, 0.9) 0%, rgba(255, 0, 0, 0.1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 * {
   margin: 0;

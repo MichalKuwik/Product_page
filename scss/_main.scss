@@ -1,0 +1,29 @@
+.sec1{
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+
+  & .cover-img{
+    height: 35vh;
+    flex:1;
+    
+
+    & img{
+      width:80%;
+      height: 100%;
+    }
+  }
+  & .introduction{
+    flex:1;
+
+    & .intro-text{
+      & h1{
+        font-size:1.5rem;
+        font-weight: 500;
+        background: linear-gradient(to right,rgba(255,0,0,0.9) 0%, rgba(255,0,0,0.1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
