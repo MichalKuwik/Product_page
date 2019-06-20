@@ -63,4 +63,25 @@
       }
     }
   }
+
+  .circle-large{
+    width:60vw;
+    height: 60vw;
+    top:-5%;
+    right: -25%;
+  }
+
+  .circle-small{
+    top:40%;
+    left:85%;
+    width:30vw;
+    height: 30vw;
+    transform: rotate(-145deg);
+  }
+
+  .circle-medium{
+    left:6%;
+    top:40%;
+    transform: rotate(-90deg);
+  }
 }

@@ -1,5 +1,5 @@
 header{
-  background: $white-color;
+  background: transparent;
   height: 10vh;
   border-bottom:1px solid $primary-color;
   overflow-x: hidden;
@@ -48,11 +48,12 @@ header{
           padding:8px 10px;
           cursor: pointer;
           text-align: center;
-          background: $primary-color;
+          background: none;
+          border:2px solid $primary-color;
           border-radius: 50%;
 
           & .fas{
-            color:$white-color;
+            color:$primary-color;
             font-size:1.2rem;
           }
 
@@ -61,7 +62,7 @@ header{
       & .hamburger-menu{
         width:35px;
         height: 30px;
-        background: #fff;
+        background: transparent;
         cursor: pointer;
         display: flex;
         flex-direction: column;
