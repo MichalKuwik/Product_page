@@ -38,7 +38,7 @@ header{
     }
 
     & .navbar{
-      flex:3;
+      flex:5;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -49,18 +49,35 @@ header{
           cursor: pointer;
           text-align: center;
           background: none;
-          border:2px solid $primary-color;
-          border-radius: 50%;
+          width:100%;
+          display: flex;
+          justify-content: center;
+         
+          & .count{
+            background: $primary-color;
+            border-radius: 50%;
+            color:$white-color;          
+            width:20px;
+            height: 20px;
+            padding:8px;
+            font-size:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
           & .fas{
             color:$primary-color;
-            font-size:1.2rem;
+            font-size:1rem;
+             border:2px solid $primary-color;
+             border-radius: 50%;
+             padding:5px;
           }
 
       }
       
       & .hamburger-menu{
-        width:35px;
+        width:65px;
         height: 30px;
         background: transparent;
         cursor: pointer;
