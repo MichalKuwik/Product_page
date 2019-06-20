@@ -74,17 +74,17 @@ header{
 
       & .nav-list{
         position: absolute;
-        top:0;
+        top:10%;
         bottom:0;
-        right: -50%;
-        width:50%;
+        right: -100%;
+        width:100%;
         background: $nav-list-color;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-in-out;
-        z-index:-9;
+        z-index:1;
         
         
 

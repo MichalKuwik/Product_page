@@ -48,6 +48,12 @@
         font-weight: 500;
         margin-right: 1rem;
         margin-left:0.5rem;
+        transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        &:hover{
+          color:$white-color;
+          background: $primary-color;
+        }
       }
 
       & .cta-add{
@@ -58,6 +64,13 @@
         color:$white-color;
         cursor: pointer;
         font-weight: 500;
+        transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        &:hover{
+          color:$primary-color;
+          background: $white-color;
+          border:2px solid $primary-color;
+        }
       }
     }
   }
