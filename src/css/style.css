@@ -32,6 +32,16 @@ header {
       display: flex;
       justify-content: flex-end;
       align-items: center; }
+      header nav .navbar .shop-icon {
+        margin-right: 3rem;
+        padding: 8px 10px;
+        cursor: pointer;
+        text-align: center;
+        background: #EE82Ee;
+        border-radius: 50%; }
+        header nav .navbar .shop-icon .fas {
+          color: #fff;
+          font-size: 1.2rem; }
       header nav .navbar .hamburger-menu {
         width: 35px;
         height: 30px;
@@ -41,7 +51,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         z-index: 99;
-        margin-right: 5rem; }
+        margin-right: 2rem; }
         header nav .navbar .hamburger-menu .line {
           width: 100%;
           height: 3px;
@@ -55,7 +65,7 @@ header {
           transform: rotateZ(-405deg) translate(11px, -9px); }
       header nav .navbar .nav-list {
         position: absolute;
-        top: 10%;
+        top: 13%;
         bottom: 0;
         right: -100%;
         width: 100%;

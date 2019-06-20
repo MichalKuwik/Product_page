@@ -42,6 +42,21 @@ header{
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
+      & .shop-icon{
+          margin-right: 3rem;
+          padding:8px 10px;
+          cursor: pointer;
+          text-align: center;
+          background: $primary-color;
+          border-radius: 50%;
+
+          & .fas{
+            color:$white-color;
+            font-size:1.2rem;
+          }
+
+      }
       
       & .hamburger-menu{
         width:35px;
@@ -52,7 +67,7 @@ header{
         flex-direction: column;
         justify-content: space-between;
         z-index: 99;
-        margin-right:5rem;
+        margin-right:2rem;
 
         & .line{
           width:100%;
@@ -74,7 +89,7 @@ header{
 
       & .nav-list{
         position: absolute;
-        top:10%;
+        top:13%;
         bottom:0;
         right: -100%;
         width:100%;
