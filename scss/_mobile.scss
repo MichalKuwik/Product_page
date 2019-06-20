@@ -21,4 +21,46 @@
       }
     }
   }
+
+  main{
+    & .sec1{
+      flex-direction: column;
+
+      & .introduction{
+        margin-top:3rem;
+
+        & .intro-text{
+          width:70%;
+          margin:auto;
+        }
+
+        & .cta{
+          flex-direction: column;
+          width:90%;
+          margin: 2rem auto;
+          
+          
+          & .cta-learn{
+            width:80%;
+            margin:auto
+             
+          }
+          & .cta-add{
+            width:80%;
+            margin:auto;
+            margin-top:1rem;
+          }
+        }
+      }
+
+      & .cover-img{
+        display: flex;
+        justify-content: center;
+        
+        & img{
+          width:100%;
+        }
+      }
+    }
+  }
 }

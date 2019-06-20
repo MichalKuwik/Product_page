@@ -5,6 +5,7 @@ const naviMenu = document.querySelector('.nav-list');
 const navItems = document.querySelectorAll('.nav-link');
 const icon = document.querySelector('.fas');
 
+//ad event listener
 burgerMenu.addEventListener('click',function(){
   burgerItems.forEach(function(item){
     item.classList.toggle('active');
