@@ -56,9 +56,12 @@
       & .cover-img{
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        
         
         & img{
-          width:100%;
+          width:60%;
+          height: 80%;
         }
       }
     }

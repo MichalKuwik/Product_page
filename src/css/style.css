@@ -42,7 +42,7 @@ header {
         display: flex;
         justify-content: center; }
         header nav .navbar .shop-icon .count {
-          background: #EE82Ee;
+          background: #000;
           border-radius: 50%;
           color: #fff;
           width: 20px;
@@ -129,10 +129,34 @@ header {
   min-height: 80vh; }
   .sec1 .cover-img {
     height: 35vh;
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .sec1 .cover-img img {
-      width: 100%;
-      height: 100%; }
+      width: 60%;
+      height: 100%;
+      animation: animImg 1s 0.5s ease-in-out both; }
+    .sec1 .cover-img .dots {
+      width: 50%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto; }
+      .sec1 .cover-img .dots .arrow {
+        cursor: pointer; }
+        .sec1 .cover-img .dots .arrow .fas {
+          color: black;
+          font-size: 1.5rem; }
+      .sec1 .cover-img .dots .dot {
+        border-radius: 50%;
+        width: 7px;
+        height: 7px;
+        background: black; }
+        .sec1 .cover-img .dots .dot.active {
+          width: 20px;
+          height: 20px; }
   .sec1 .introduction {
     flex: 1; }
     .sec1 .introduction .intro-text {
@@ -181,7 +205,7 @@ header {
 
 .circle-large {
   position: absolute;
-  top: -10%;
+  top: -20%;
   right: -10%;
   transform: rotate(290deg);
   z-index: -7;
@@ -223,6 +247,14 @@ header {
   background: linear-gradient(to right, rgba(238, 130, 238, 0.9) 0%, rgba(238, 130, 238, 0.1) 100%);
   border-radius: 50%; }
 
+@keyframes animImg {
+  from {
+    transform: translateY(-50px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -261,9 +293,11 @@ body {
           margin-top: 1rem; }
     main .sec1 .cover-img {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: column; }
       main .sec1 .cover-img img {
-        width: 100%; }
+        width: 60%;
+        height: 80%; }
   .circle-large {
     width: 60vw;
     height: 60vw;

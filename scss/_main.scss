@@ -6,11 +6,48 @@
   & .cover-img{
     height: 35vh;
     flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 
     & img{
-      width:100%;
+      width:60%;
       height: 100%;
+      animation: animImg 1s 0.5s ease-in-out both;
+      
+    }
+
+    & .dots{
+      width:50%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin:1rem auto;
+
+      & .arrow{
+        cursor: pointer;
+
+        & .fas{
+          color:black;
+          font-size:1.5rem;
+          
+        }
+      }
+
+      & .dot{
+        border-radius: 50%;
+        width:7px;
+        height: 7px;
+        background: black;
+        
+        &.active{
+          width:20px;
+          height: 20px;
+        }
+      }
+      
     }
   }
   & .introduction{
@@ -78,7 +115,7 @@
 
 .circle-large{
  position: absolute;
- top:-10%;
+ top:-20%;
  right: -10%;
  transform: rotate(290deg);
  z-index:-7;
@@ -122,4 +159,15 @@
   height: 15vw;
   background: linear-gradient(to right,rgba(238,130,238,0.9) 0%, rgba(238,130,238,0.1) 100%);
   border-radius: 50%; 
+}
+
+@keyframes animImg{
+  from{
+    transform: translateY(-50px);
+    opacity:0;
+  }
+  to{
+    transform: translateY(0);
+    opacity:1
+  }
 }
