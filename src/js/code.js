@@ -4,22 +4,37 @@ const burgerItems = document.querySelectorAll('.line');
 const naviMenu = document.querySelector('.nav-list');
 const navItems = document.querySelectorAll('.nav-link');
 const icon = document.querySelector('.fas');
+const navigationItems = document.querySelectorAll('.nav-item');
 
-//ad event listener
-burgerMenu.addEventListener('click',function(){
-  burgerItems.forEach(function(item){
-    item.classList.toggle('active');
-   
-  });
+// 
 
-  naviMenu.classList.toggle('show');
-  
-  navItems.forEach(function(ite){
-    ite.classList.toggle('animOp');
-  }) ;
- 
-  icon.classList.toggle('iconAnime');
-  
-  
-});
+let showMenu = false;
 
+burgerMenu.addEventListener('click',toggleMenu);
+
+function toggleMenu(){
+  if(!showMenu){
+    burgerItems.forEach(item=> item.classList.add('active'));
+    naviMenu.classList.add('show');
+    navItems.forEach(item=> item.classList.add('animOp'));
+    icon.classList.add('iconAnime');
+
+    showMenu = true;
+  }else{
+    burgerItems.forEach(item=> item.classList.remove('active'));
+    naviMenu.classList.remove('show');
+    navItems.forEach(item=> item.classList.remove('animOp'));
+    icon.classList.remove('iconAnime');
+
+    showMenu = false;
+  }
+}
+
+navigationItems.forEach(itemNav => {
+  itemNav.addEventListener('click',function(){
+    naviMenu.classList.remove('show');
+    burgerItems.forEach(burItem => {
+      burItem.classList.remove('active');
+    })
+  })
+})
