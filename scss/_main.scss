@@ -18,38 +18,7 @@
       
     }
 
-    & .dots{
-      width:30%;
-      height: 20%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin:1rem auto;
-
-      & .arrow{
-        cursor: pointer;
-
-        & .fas{
-          color:black;
-          font-size:1.5rem;
-          
-        }
-      }
-
-      & .dot{
-        border-radius: 50%;
-        width:10px;
-        height: 10px;
-        background: black;
-        cursor: pointer;
-        
-        &.active{
-          width:25px;
-          height: 25px;
-        }
-      }
-      
-    }
+    
   }
   & .introduction{
     flex:1;
@@ -172,3 +141,4 @@
     opacity:1
   }
 }
+
