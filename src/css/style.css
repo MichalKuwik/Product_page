@@ -138,7 +138,7 @@ header {
       height: 100%;
       animation: animImg 1s 0.5s ease-in-out both; }
     .sec1 .cover-img .dots {
-      width: 50%;
+      width: 30%;
       height: 20%;
       display: flex;
       justify-content: space-between;
@@ -151,12 +151,13 @@ header {
           font-size: 1.5rem; }
       .sec1 .cover-img .dots .dot {
         border-radius: 50%;
-        width: 7px;
-        height: 7px;
-        background: black; }
+        width: 10px;
+        height: 10px;
+        background: black;
+        cursor: pointer; }
         .sec1 .cover-img .dots .dot.active {
-          width: 20px;
-          height: 20px; }
+          width: 25px;
+          height: 25px; }
   .sec1 .introduction {
     flex: 1; }
     .sec1 .introduction .intro-text {
