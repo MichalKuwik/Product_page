@@ -133,6 +133,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .sec1 .cover-img .line {
+      width: 10px;
+      height: 2px;
+      background: #EE82Ee;
+      margin-top: 1rem; }
     .sec1 .cover-img img {
       width: 60%;
       height: 100%;
@@ -234,6 +239,12 @@ header {
   to {
     transform: translateY(0);
     opacity: 1; } }
+
+@keyframes widthLine {
+  0% {
+    width: 0px; }
+  100% {
+    width: 60%; } }
 
 * {
   margin: 0;

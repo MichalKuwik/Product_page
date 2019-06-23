@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & .line{
+      width:10px;
+      height: 2px;
+      background: $primary-color;
+      margin-top:1rem;
+      
+    }
     
 
     & img{
@@ -142,3 +150,11 @@
   }
 }
 
+@keyframes widthLine{
+  0%{
+    width:0px;
+  }
+  100%{
+    width:60%;
+  }
+}
