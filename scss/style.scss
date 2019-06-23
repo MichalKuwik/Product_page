@@ -3,6 +3,7 @@
 @import 'config';
 @import 'headerAndMenu';
 @import 'main';
+@import 'footer';
 
 *{
   margin:0;
@@ -12,6 +13,7 @@
 }
 body{
   overflow-x: hidden;
+  height: 100vh;
 }
 
 

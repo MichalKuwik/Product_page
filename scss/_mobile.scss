@@ -28,6 +28,8 @@
 
       & .introduction{
         margin-top:3rem;
+        display: flex;
+        flex-direction: column;
 
         & .intro-text{
           width:70%;
@@ -86,5 +88,14 @@
     left:6%;
     top:40%;
     transform: rotate(-90deg);
+  }
+
+  footer{
+    flex-direction: column;
+    padding:0.5rem;
+    
+    & p {
+      font-size: 1rem;
+    }
   }
 }
