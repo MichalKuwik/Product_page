@@ -288,7 +288,7 @@ body {
   main .sec1 {
     flex-direction: column; }
     main .sec1 .introduction {
-      margin-top: 3rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: column; }
       main .sec1 .introduction .intro-text {
