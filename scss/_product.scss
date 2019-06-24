@@ -1,0 +1,43 @@
+main.product-main{
+  & #present{
+    min-height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    margin:3rem auto;
+
+    & .option{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:30%;
+      text-align: center;
+      background: linear-gradient(to right,rgba(121, 100, 121, 0.8) 0%, rgba(238,130,238,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border:1px solid rgba(0, 0, 0,0.2);
+        border-radius: 20px;
+        padding:1rem 0.5rem;
+
+      & h3{
+        flex:1;
+        background: linear-gradient(to right,rgba(238,130,238,0.5) 0%, rgba(238,130,238,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        
+      }
+      & .fas{
+        flex:2;
+        font-size:5rem;
+      }
+      & p{
+        flex:2;
+        background: linear-gradient(to right,rgba(121, 100, 121, 0.8) 0%, rgba(238,130,238,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size:1rem;
+      }
+    }
+  }
+}
