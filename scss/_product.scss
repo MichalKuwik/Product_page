@@ -18,6 +18,12 @@ main.product-main{
         border:1px solid rgba(0, 0, 0,0.2);
         border-radius: 20px;
         padding:1rem 0.5rem;
+        transition: border 0.2s linear;
+
+        &:hover{
+          border: 2px solid rgba(121, 100, 121, 0.8);
+          
+        }
 
       & h3{
         flex:1;

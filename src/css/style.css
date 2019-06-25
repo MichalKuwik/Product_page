@@ -8,7 +8,7 @@ header {
   header nav {
     display: flex; }
     header nav .logo-div {
-      flex: 1;
+      flex: 2;
       display: flex;
       flex-direction: column;
       margin: 0.5rem 0 0 0;
@@ -33,7 +33,7 @@ header {
       justify-content: flex-end;
       align-items: center; }
       header nav .navbar .shop-icon {
-        margin-right: 3rem;
+        margin-right: 0.2rem;
         padding: 8px 10px;
         cursor: pointer;
         text-align: center;
@@ -59,7 +59,7 @@ header {
           border-radius: 50%;
           padding: 5px; }
       header nav .navbar .hamburger-menu {
-        width: 65px;
+        width: 55px;
         height: 30px;
         background: transparent;
         cursor: pointer;
@@ -171,6 +171,9 @@ header {
         margin-right: 1rem;
         margin-left: 0.5rem;
         transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1); }
+        .sec1 .introduction .cta .cta-learn a {
+          text-decoration: none;
+          color: #EE82Ee; }
         .sec1 .introduction .cta .cta-learn:hover {
           color: #fff;
           background: #EE82Ee; }
@@ -263,7 +266,10 @@ main.product-main #present {
     -webkit-text-fill-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding: 1rem 0.5rem; }
+    padding: 1rem 0.5rem;
+    transition: border 0.2s linear; }
+    main.product-main #present .option:hover {
+      border: 2px solid rgba(121, 100, 121, 0.8); }
     main.product-main #present .option h3 {
       flex: 1;
       background: linear-gradient(to right, rgba(238, 130, 238, 0.5) 0%, violet 100%);
@@ -328,6 +334,8 @@ body {
       main .sec1 .introduction .intro-text {
         width: 70%;
         margin: auto; }
+        main .sec1 .introduction .intro-text h1 {
+          margin-bottom: 2rem; }
       main .sec1 .introduction .cta {
         flex-direction: column;
         width: 90%;

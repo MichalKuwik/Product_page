@@ -65,6 +65,11 @@
         margin-left:0.5rem;
         transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 
+        & a{
+          text-decoration: none;
+          color:$primary-color;
+        }
+
         &:hover{
           color:$white-color;
           background: $primary-color;
