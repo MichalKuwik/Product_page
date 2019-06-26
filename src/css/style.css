@@ -85,7 +85,7 @@ header {
         bottom: 0;
         right: -100%;
         width: 100%;
-        background: linear-gradient(180deg, white 0%, #EE82Ee 100%);
+        background: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -97,21 +97,29 @@ header {
           list-style: none; }
           header nav .navbar .nav-list .nav-item:hover {
             cursor: pointer; }
+          header nav .navbar .nav-list .nav-item i {
+            font-size: 1.5rem;
+            color: #EE82Ee;
+            margin-right: 1rem; }
+            header nav .navbar .nav-list .nav-item i .animOp {
+              animation: anime-menu 1s 2s forwards; }
           header nav .navbar .nav-list .nav-item .nav-link {
             text-transform: uppercase;
-            color: #fff;
+            color: linear-gradient(to right, rgba(121, 100, 121, 0.2) 0%, violet 100%);
             font-weight: 600;
             text-decoration: none;
             letter-spacing: 2px;
             opacity: 0;
             font-size: 1.4rem;
-            transition: 0.2s ease-in; }
+            transition: 0.2s ease-in;
+            padding-right: 1rem;
+            transition: 0.2s ease-in-out; }
             header nav .navbar .nav-list .nav-item .nav-link:hover {
               cursor: pointer;
               background: #fff;
               color: #EE82Ee;
               padding: 6px 3px;
-              border-radius: 10px; }
+              border-right: 2px solid #EE82Ee; }
           header nav .navbar .nav-list .nav-item .animOp {
             animation: anime-menu 0.7s linear 0.5s forwards; }
       header nav .navbar .show {
@@ -474,4 +482,12 @@ body {
         margin-bottom: 1rem; }
       main.product-main #present .option .fas {
         font-size: 3rem;
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem; }
+  main.contact-main {
+    flex-direction: column; }
+    main.contact-main .intro {
+      width: 100%;
+      margin: 3rem auto; }
+    main.contact-main .form-div {
+      width: 90%;
+      margin-bottom: 4rem; } }

@@ -5,6 +5,7 @@ const naviMenu = document.querySelector('.nav-list');
 const navItems = document.querySelectorAll('.nav-link');
 const icon = document.querySelector('.fas');
 const navigationItems = document.querySelectorAll('.nav-item');
+const fontAwe = document.querySelectorAll('.nav-item i');
 
 // 
 

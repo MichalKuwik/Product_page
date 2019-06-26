@@ -125,5 +125,19 @@
       }
     }
   }
+
+  main.contact-main{
+    flex-direction: column;
+
+    & .intro{
+      width: 100%;
+      margin:3rem auto;
+    }
+
+    & .form-div{
+      width:90%;
+      margin-bottom:4rem;
+    }
+  }
 }
 
