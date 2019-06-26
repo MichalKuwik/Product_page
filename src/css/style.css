@@ -199,7 +199,7 @@ header {
   z-index: -7;
   width: 50vw;
   height: 50vw;
-  background: linear-gradient(to right, rgba(238, 130, 238, 0.9) 0%, rgba(238, 130, 238, 0.1) 100%);
+  background: linear-gradient(to right, rgba(226, 93, 226, 0.1) 0%, rgba(121, 100, 121, 0.2) 100%);
   border-radius: 50%; }
 
 .circle-medium {
@@ -210,7 +210,7 @@ header {
   z-index: -7;
   width: 30vw;
   height: 30vw;
-  background: linear-gradient(to right, rgba(238, 130, 238, 0.9) 0%, rgba(238, 130, 238, 0.1) 100%);
+  background: linear-gradient(to right, rgba(226, 93, 226, 0.3) 0%, rgba(238, 130, 238, 0.1) 100%);
   border-radius: 50%; }
 
 .circle-medium2 {
@@ -221,7 +221,7 @@ header {
   z-index: -7;
   width: 30vw;
   height: 30vw;
-  background: linear-gradient(to right, rgba(238, 130, 238, 0.9) 0%, rgba(238, 130, 238, 0.1) 100%);
+  background: linear-gradient(to right, rgba(226, 93, 226, 0.3) 0%, rgba(238, 130, 238, 0.1) 100%);
   border-radius: 50%; }
 
 .circle-small {
@@ -232,7 +232,7 @@ header {
   z-index: -7;
   width: 15vw;
   height: 15vw;
-  background: linear-gradient(to right, rgba(238, 130, 238, 0.9) 0%, rgba(238, 130, 238, 0.1) 100%);
+  background: linear-gradient(to right, rgba(238, 130, 238, 0.5) 0%, rgba(238, 130, 238, 0.1) 100%);
   border-radius: 50%; }
 
 @keyframes animImg {
@@ -288,14 +288,17 @@ main.product-main #present {
 
 main {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; }
   main .form-div {
     width: 40%;
+    height: 80%;
     padding: 40px;
     box-sizing: border-box;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #EE82Ee;
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat';
+    border-radius: 15px; }
     main .form-div h2 {
       margin: 0 0 40px;
       padding: 0;
@@ -331,7 +334,8 @@ main {
       color: #fff;
       text-transform: uppercase;
       font-size: 1rem;
-      font-weight: 600; }
+      font-weight: 600;
+      border-radius: 20px; }
     main .form-div form div {
       position: relative; }
       main .form-div form div label {
@@ -342,6 +346,34 @@ main {
         transition: 0.5s;
         pointer-events: none;
         font-weight: 600; }
+  main .intro {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem; }
+    main .intro h2 {
+      font-size: 1.6rem;
+      text-align: center; }
+      main .intro h2 span {
+        color: #EE82Ee;
+        text-transform: uppercase;
+        font-size: 3rem; }
+    main .intro .far {
+      font-size: 4rem;
+      background: linear-gradient(to right, rgba(121, 100, 121, 0.8) 0%, violet 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 3rem; }
+    main .intro .box {
+      background: linear-gradient(to right, rgba(121, 100, 121, 0.8) 0%, violet 100%);
+      padding: 15px;
+      border-radius: 20px;
+      margin-top: 3rem; }
+      main .intro .box p {
+        color: #fff; }
 
 footer {
   display: flex;
