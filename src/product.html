@@ -45,7 +45,7 @@
   <main class="product-main">
 
     <section id="present">
-      <div class="option">
+      <div class="option option1" data-aos-delay="1000" data-aos-duration="2000">
         <h3>Niezawodność</h3>
         <i class="fas fa-icons"></i>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, eveniet. Doloribus, earum dolores? 
@@ -53,7 +53,7 @@
           blanditiis officia at quibusdam sit quam in corporis?</p>
       </div>
 
-      <div class="option">
+      <div class="option option2">
           <h3>Nowoczesny styl</h3>
           <i class="fas fa-pencil-ruler"></i>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, eveniet. Doloribus, earum dolores? 
@@ -61,7 +61,7 @@
             blanditiis officia at quibusdam sit quam in corporis?</p>
       </div>
 
-      <div class="option">
+      <div class="option option3">
           <h3>Najniższe ceny</h3>
           <i class="fas fa-wallet"></i>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, eveniet. Doloribus, earum dolores? 
@@ -72,7 +72,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer >
     <p>Michał Kuwik || 2019</p>
     <div class="social-media">
       <a href="https://www.youtube.com" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
@@ -82,7 +82,25 @@
     </div>
   </footer>
 
- 
+  
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript">
+  window.sr = ScrollReveal();
+    sr.reveal('.option1', {
+      duration:2000,
+      origin: 'left',
+      distance: '50px'
+    })
+
+    sr.reveal('.option2', {
+      duration:2000,
+      origin: 'right',
+      distance: '50px'
+    })
+
+   
+    </script>
   <script src="js/code.js"></script>
+  
 </body>
 </html>

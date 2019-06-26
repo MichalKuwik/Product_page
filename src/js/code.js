@@ -41,11 +41,5 @@ navigationItems.forEach(itemNav => {
 })
 
 
-//click button,add many to icon shop
-const counter = document.querySelector('span.count');
-let value = 0;
-const addBtn = document.querySelector('.cta-add').addEventListener('click',() => {
-  value++;
-  counter.innerHTML = value;
 
-});
+
