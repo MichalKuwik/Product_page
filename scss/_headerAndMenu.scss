@@ -147,7 +147,7 @@ header{
             letter-spacing: 2px;
             opacity: 0;
             font-size: 1.4rem;
-            transition: 0.2s ease-in;
+            
             padding-right: 1rem;
             transition: 0.2s ease-in-out;
             
@@ -160,8 +160,14 @@ header{
               border-right: 2px solid $primary-color;
             }
           }
-          & .animOp{
-            animation: anime-menu 0.7s linear 0.5s forwards;
+          &:nth-child(1) .animOp{
+            animation: anime-menu 0.5s linear 0.5s forwards;
+          }
+          &:nth-child(2) .animOp{
+            animation: anime-menu 0.5s linear 0.7s forwards;
+          }
+          &:nth-child(3) .animOp{
+            animation: anime-menu 0.5s linear 0.9s forwards;
           }
         }
       }
